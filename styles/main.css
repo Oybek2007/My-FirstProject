@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.hover_div_animatsiya {
+    width: 10px;
+    height: 100%;
+    background: none;
+    position: fixed;
+    transition: all ease 0.1s;
+    overflow: hidden;
+}
+
+.hover_div_animatsiya_links {
+    width: auto;
+    height: auto;
+    margin: 70% 0 0 25%;
+}
+
+.hover_div_animatsiya:hover {
+    display: block;
+    width: 21%;
+    background-color: #2BC729;
+    z-index: 10;
+    transition: all ease 0.4s;
+    text-align: left;
+}
+
+.hover_div_animatsiya:hover div {
+    display: block;
+}
+
+.hover_div_animatsiya div {
+    display: none;
+    left: 20%;
+}
+
+.hover_div_animatsiya div a {
+    text-decoration: none;
+    color: white;
+}
+
+.hover_div_animatsiya div a h1 {
+    padding: 10px;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Nav-bar qismi */
+.header1 {
+    width: 100%;
+    height: 910px auto;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    top: 20px;
+    z-index: 9;
+    text-align: center;
+}
+
+nav:hover {
+    background-color: black;
+    height: 40px;
+}
+
+.header_1{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 70.2%, rgba(0, 0, 0, 0) 100%), url("../source/header/Aral_Sea_Ship.png");
+    width: 100%;
+    height: 910px;
+    z-index: -600;
+}
+
+.logo{
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    width: 24px;
+    height: 20;
+    color: #FFFFFF;
+    align-items: center;
+    /* margin-right: 60px; */
+}
+
+.nav_links a, .nav_registers a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.nav_links a{
+    margin: 20px;
+}
+
+.nav_registers a {
+    border: 1px solid #FFFFFF;
+    padding: 3px 18px;
+    margin: 10px;
+}
+
+
+/* Header`s paragraphs */
+.header_paragraphs{
+    text-align: center;
+    padding-top: 85px;
+}
+
+/* Card1 h1 */
+
+.header_paragraphs_card1 h1{
+    display: inline;
+    width: 804px;
+    height: 209px;
+    font-family: Satisfy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 145px;
+    line-height: 209px;
+    color: #2BC729;
+}
+
+.header_paragraphs_card1 h1:nth-child(2){
+    color: #FFFFFF;
+}
+
+/* Card1 p */
+.header_paragraphs_card1 p{
+    /* max-width: 1160px; */
+    height: 78px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+/* Card2`s h1s */
+.header_paragraphs_card2{
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_paragraphs_card2 h1 , .header_paragraphs_card2 span{
+    /* max-width: 420px; */
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 105.6%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+/* Kattalashish 1 */
+.header_paragraphs_card2 span:nth-child(1) {
+    transform: scale(1, 1);
+    transition: all ease 1s;
+    max-width: 500px;
+    padding: 30px;
+}
+span{
+    display: inline-block;
+}
+
+.header_paragraphs_card2 span:nth-child(1):hover {
+    transform: scale(2, 2);
+    transition: all ease 2s;
+    color: purple;
+    max-width: 500px;
+}
+
+/* Kattalashish 2 */
+.header_paragraphs_card2 span:nth-child(2){
+    font-size: 95px;
+    transform: scale(1, 1);
+    transition: all ease 1s;
+}
+
+.header_paragraphs_card2 span:nth-child(2):hover {
+    transform: scale(2,2);
+    transition: all ease 2s;
+    color: red;
+}
+
+
+/* Card3`s buttons */
+.header_paragraphs_card3 button{
+    height: 60px;
+    width: 200px;
+    border-radius: nullpx;
+    margin: 40px 17px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+    background: #189616;
+    transition: all ease 0.7s;
+}
+
+.header_paragraphs_card3 button:hover{
+    background: rgb(220, 207, 20);
+    border-radius: 150px;
+    transform: scale(1.5, 1.5);
+    transition: all ease 1s;
+}
+
+.header_paragraphs_card3 button:active {
+    background: purple;
+    border-radius: 150px;
+    transform: rotate(180deg);
+    transition: all ease 0.5s;
+}
+
+
+/* Section1 */
+.section1_first_h1{
+    padding-top: 105px;
+    color: #555555;
+    display: flex;
+}
+
+.section1_first_h1 h1 b {
+    color: #333333;
+}
+
+.section1_big_div1, .section1_big_div2 {
+    width: 955px;
+    height: 1845px;
+}
+
+.section1_big_div img {
+    width: 770px;
+    height: 770px;
+}
+
+.section1_big_div h1 {
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+.section1_big_div1 div {
+    width: 781px;
+    height: 954px;
+    border-radius: nullpx;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+/* Section1 big divs2 right */
+.section1_big_rightdiv_video {
+    text-align: center;
+    align-items: center;
+    width: 780px auto;
+    height: 644px auto;
+}
+
+.section1_big_rightdiv_video img {
+    width: 780px;
+    height: 644px;
+}
+
+.section1_big_rightdiv_video span h1 {
+    margin-top: -38%;
+    width: 106px auto;
+    /* height: 644px; */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+}
+
+.section1_big_div2_right_controller {
+    max-width: 780px;
+    max-height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px;
+    margin-top: 320px;
+
+}
+
+.section1_big_div2_right_controller img {
+    width: 30px;
+    height: 50px;
+}
+ 
+.section1_big_div2_right_controller_orta img {
+    background: #C4C4C4;
+    width: 175px;
+    height: 107px;
+}
+
+.section1_big_div2_right_controller div {
+    display: flex;
+    justify-content: space-around;
+    padding: 17px;
+}
